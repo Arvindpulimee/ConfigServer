@@ -44,5 +44,5 @@ management:
     sampling:
       probability: 1.0
 application:
-  version: springboot-v1
+  version: springboot-v2
 
