@@ -52,4 +52,17 @@ management:
       enabled: true
 application:
   version: springboot-v5
-  
+resilience4j:
+  circuitbreaker:
+    instances:
+      myService:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10000
+  retry:
+    instances:
+      myService:
+        maxAttempts: 3
+        waitDuration: 5000
+
