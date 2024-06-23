@@ -45,4 +45,12 @@ management:
       probability: 1.0
 application:
   version: springboot-v2
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
 
