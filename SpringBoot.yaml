@@ -24,6 +24,8 @@ spring:
     loadbalancer:
       retry:
         enabled: true
+  bus:
+    enabled: true
 
 server:
   port: 8080
