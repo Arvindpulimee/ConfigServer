@@ -55,14 +55,14 @@ application:
 resilience4j:
   circuitbreaker:
     instances:
-      myService:
+      UserServiceImpl:
         registerHealthIndicator: true
         slidingWindowSize: 10
         failureRateThreshold: 50
         waitDurationInOpenState: 10000
   retry:
     instances:
-      myService:
+      UserServiceImpl:
         maxAttempts: 3
         waitDuration: 5000
 
