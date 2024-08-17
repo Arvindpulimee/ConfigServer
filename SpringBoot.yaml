@@ -1,6 +1,10 @@
 spring:
   application:
     name: SpringBoot
+  security:
+    user:
+	  name:Arvind
+	  password:Arvind
   datasource:
     url: jdbc:postgresql://localhost:5432/learning
     username: postgres
@@ -65,4 +69,3 @@ resilience4j:
       UserServiceImpl:
         maxAttempts: 3
         waitDuration: 5000
-
