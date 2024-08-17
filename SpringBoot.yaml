@@ -1,10 +1,6 @@
 spring:
   application:
     name: SpringBoot
-  security:
-    user:
-      name: Arvind
-      password: Arvind
   datasource:
     url: jdbc:postgresql://localhost:5432/learning
     username: postgres
