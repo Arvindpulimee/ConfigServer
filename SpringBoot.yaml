@@ -3,8 +3,8 @@ spring:
     name: SpringBoot
   security:
     user:
-	  name:Arvind
-	  password:Arvind
+      name: Arvind
+      password: Arvind
   datasource:
     url: jdbc:postgresql://localhost:5432/learning
     username: postgres
@@ -38,6 +38,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     instance:
       hostname: localhost
+
 management:
   metrics:
     export:
@@ -54,8 +55,10 @@ management:
   endpoint:
     gateway:
       enabled: true
+
 application:
   version: springboot-v5
+
 resilience4j:
   circuitbreaker:
     instances:
